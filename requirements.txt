@@ -5,6 +5,7 @@ seaborn
 
 # Comunicación con API de GitHub y manejo de red
 requests
+python-dotenv
 
 # Utilidades de tiempo para el filtrado
 python-dateutil
