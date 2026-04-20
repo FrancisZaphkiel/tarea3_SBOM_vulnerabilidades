@@ -1,0 +1,14 @@
+# Análisis de Datos y Visualización
+pandas
+matplotlib
+seaborn
+
+# Comunicación con API de GitHub y manejo de red
+requests
+
+# Utilidades de tiempo para el filtrado
+python-dateutil
+
+# Entorno de Jupyter
+jupyter
+ipykernel

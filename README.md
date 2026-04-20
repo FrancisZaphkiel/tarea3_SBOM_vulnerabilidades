@@ -22,6 +22,7 @@ El flujo de trabajo consiste en:
 ├── compose.yml           # Orquestación del entorno (Docker)
 ├── Dockerfile            # Construcción de la imagen del proyecto
 ├── README.md             # Documentación principal
+├── requirements.txt      # Dependencias del proyecto
 ├── extraction/           # Scripts para filtrar y clonar repositorios de GitHub
 ├── generation/           # Lógica de generación de SBOM con Syft
 ├── analysis/             # Scripts de escaneo con Grype/Trivy
