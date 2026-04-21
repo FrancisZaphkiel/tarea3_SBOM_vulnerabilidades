@@ -11,11 +11,11 @@ python-dotenv
 python-dateutil
 
 # Generación de SBOM – CLI (debe estar en el PATH)
-syft-cli
+#syft-cli
 
 # Herramientas de Escaneo de Vulnerabilidades - CLI (deben estar en el PATH)
-grype-cli
-trivy-cli
+#grype-cli
+#trivy-cli
 
 # Entorno de Jupyter
 jupyter
