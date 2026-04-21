@@ -10,6 +10,9 @@ python-dotenv
 # Utilidades de tiempo para el filtrado
 python-dateutil
 
+# Generación de SBOM – CLI (debe estar en el PATH)
+syft-cli
+
 # Entorno de Jupyter
 jupyter
 ipykernel

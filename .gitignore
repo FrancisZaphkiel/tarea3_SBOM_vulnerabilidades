@@ -3,8 +3,9 @@ venv/
 env/
 .env
 
-# Directorio de repositorios clonados
+# Directorio de repositorios clonados y analisis
 cloned_repos/
+sboms/
 
 # Python
 __pycache__/

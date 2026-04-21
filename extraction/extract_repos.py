@@ -12,9 +12,10 @@ ORG_NAME = 'checkly'
 GITHUB_API_URL = 'https://api.github.com'
 CLONE_DIR = 'cloned_repos'
 DAYS_LIMIT = 30
+MAX_REPOS = 50
 
 # Obtiene repositorios de la organización que han recibido commits en los últimos 'days_limit' días.
-def get_recent_repos(org, days_limit):
+def get_recent_repos(org, days_limit, max_repos):
     date_limit = datetime.now(timezone.utc) - timedelta(days=days_limit)
     date_str = date_limit.strftime('%Y-%m-%dT%H:%M:%SZ')
     
@@ -48,6 +49,9 @@ def get_recent_repos(org, days_limit):
             break
             
         for repo in page_repos:
+            if len(repos) >= max_repos:
+                return repos
+                
             pushed_at_str = repo.get('pushed_at')
             if not pushed_at_str:
                 continue
@@ -92,7 +96,7 @@ def clone_repositories(repos, target_dir):
             print(f"[ERROR] Error al clonar {repo_name}: {e}")
 
 if __name__ == "__main__":
-    recent_repos = get_recent_repos(ORG_NAME, DAYS_LIMIT)
+    recent_repos = get_recent_repos(ORG_NAME, DAYS_LIMIT, MAX_REPOS)
     
     if recent_repos:
         clone_repositories(recent_repos, CLONE_DIR)
