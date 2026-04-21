@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuración
-ORG_NAME = 'checkly'
+ORG_NAME = 'appwrite'
 GITHUB_API_URL = 'https://api.github.com'
 CLONE_DIR = 'cloned_repos'
 DAYS_LIMIT = 30

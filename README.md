@@ -1,7 +1,7 @@
 # SBOM y Análisis de Vulnerabilidades
 
 ## Descripción del Proyecto
-El objetivo de este proyecto es generar un **SBOM** de las tecnologías (dependencias, librerías y componentes) de la organización **Checkly**. Se seleccionó esta organización debido a su alta actividad y volumen generoso de repositorios. 
+El objetivo de este proyecto es generar un **SBOM** de las tecnologías (dependencias, librerías y componentes) de la organización **appwrite**. Se seleccionó esta organización debido a su alta actividad y volumen generoso de repositorios. 
 
 El flujo de trabajo consiste en:
 1.  **Filtrado:** Identificar repositorios con commits en el último mes.
