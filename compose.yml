@@ -1,0 +1,21 @@
+services:
+  sbom-analysis:
+    build: .
+    container_name: sbom_analysis_app
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+      # Se evita que la venv local interfiera con la del contenedor
+      - /app/venv
+    env_file:
+      - .env
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+networks:
+  default:
+    name: sbom_network

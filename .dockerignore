@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.git/
+.env
+cloned_repos/
+sboms/
+analysis_results/
+.ipynb_checkpoints/
