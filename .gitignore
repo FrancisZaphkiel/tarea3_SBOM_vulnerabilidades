@@ -6,6 +6,7 @@ env/
 # Directorio de repositorios clonados y analisis
 cloned_repos/
 sboms/
+analysis_results/
 
 # Python
 __pycache__/
